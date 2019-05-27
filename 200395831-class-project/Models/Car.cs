@@ -5,7 +5,7 @@ using System.Web;
 
 namespace _200395831_class_project.Models
 {
-    public class Cars
+    public class Car
     {
         public int ID { get; set; }
         public string Brand { get; set; }
