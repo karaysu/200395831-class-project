@@ -21,5 +21,17 @@ namespace _200395831_class_project.Controllers
         {
             return View(carList);
         }
+
+        public ActionResult Details(int? id)
+        {
+            if(id == null || id > carList.Count)
+            {
+                return Content("Invalid Car ID");
+            }
+            var ind = Convert.ToInt32(id) - 1;
+            var car = carList[ind];
+
+            return View(car);
+        }
     }
 }

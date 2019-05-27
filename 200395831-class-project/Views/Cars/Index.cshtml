@@ -4,15 +4,27 @@
     ViewBag.Title = "Car List";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-@foreach (var car in Model)
-{
-    @car.ID
-    @car.Brand
-    @car.Model
-    @car.Type
-    @car.Year
-}
-
 <h2>Cars List</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Type</th>
+        <th>Year</th>
+    </tr>
+    @foreach (var car in Model)
+    {
+
+        <tr>
+            <td>@car.ID</td>
+            <td>@car.Brand</td>
+            <td>@car.Model</td>
+            <td>@car.Type</td>
+            <td>@car.Year</td>
+        </tr>
+    }
+</table>
+
 
