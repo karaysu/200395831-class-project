@@ -12,7 +12,7 @@ namespace _200395831_class_project
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            //Change
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
